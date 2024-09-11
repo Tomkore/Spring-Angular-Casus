@@ -1,0 +1,17 @@
+<h2>{{ title }}</h2>
+<hr>
+<table *ngIf="user" class="table table-striped">
+  <thead class="class table-light">
+  <tr>
+    <th scope = "col">ID</th>
+    <th scope = "col">Name</th>
+    <th scope = "col">Email</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+  <tr *ngFor = "let user of user; let i =index">
+    <td>{{user.id}}</td>
+    <td>{{user.firstName}} {{user.lastName}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>

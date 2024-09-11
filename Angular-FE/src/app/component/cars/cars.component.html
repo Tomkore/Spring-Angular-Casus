@@ -1,0 +1,21 @@
+<h2>{{ title }}</h2>
+<hr>
+<table *ngIf="cars" class="table table-striped">
+  <thead class="class table-light">
+  <tr>
+    <th scope = "col">Info</th>
+    <th scope = "col">Image</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+  <tr *ngFor = "let car of cars; let i =index">
+    <td>Make: {{car.make}}<br>
+      Model: {{car.model}}<br>
+      Release year: {{car.year}}<br>
+      Fuel type: {{car.fuelType}}<br>
+      Transmission type: {{car.transmission}}<br>
+      Engine: {{car.engine}}<br>
+      Horsepower: {{car.horsepower}}</td>
+    <td><img ngSrc="{{car.image}}" [width]="200" [height]="200" alt="A picture of a {{car.make}} {{car.model}} "></td>
+  </tr>
+</table>

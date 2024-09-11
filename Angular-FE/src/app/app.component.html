@@ -1,0 +1,18 @@
+<mat-drawer-container class="nav-container">
+  <mat-drawer #drawer class="nav" mode="over">
+    <a [routerLink]="['']">Car Catalog</a><br>
+    <a [routerLink]="['/users']">Users</a>
+  </mat-drawer>
+  <div class="content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Navigation
+    </button>
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-xs-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

@@ -1,0 +1,12 @@
+td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+th{
+  text-align: center;
+}
+img{
+  width: 250px;
+  height: 250px;
+}
